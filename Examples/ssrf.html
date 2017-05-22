@@ -1,0 +1,25 @@
+﻿<html>
+<head>
+    <title>Server-Side Request Forgery</title>
+</head>
+<body>
+    <h1>SSRF (Server-Side Request Forgery)</h1>
+    <hr />
+    <h2>Scenario: testing a webhook</h2>
+    <p>Suppose we want to allow users to test a webhook. The following form allows us to specify a URL to send a request to.</p>
+    <br />
+    <form action="/Main/SSRF" method="POST">
+        URI: <input type="text" name="uri" />
+        <br />
+        HTTP Method:
+         <select name="method">
+            <option>GET</option>
+            <option>POST</option>
+        </select>
+        <br />
+        Message Body: <input type="text" name="postData"/>
+        <br />
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

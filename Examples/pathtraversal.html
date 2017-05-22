@@ -1,0 +1,29 @@
+﻿<html>
+<head>
+    <title>Path Traversal</title>
+</head>
+<body>
+    <h1>Path Traversal Attacks</h1>
+    <hr />
+    <h2>Scenario: storing user files</h2>
+    <p>Suppose we want to represent some user data as files on the server. The following form allows us to access these files.</p>
+    <br />
+    <form action="/Main/PathTraversal" method="POST">
+        Choose user to view files for:
+        <select name="user">
+            <option>Berg</option>
+            <option>Linz</option>
+            <option>Thokey</option>
+        </select>
+        <br />
+        Choose file to view:
+        <select name="file">
+            <option></option>
+            <option>Home.txt</option>
+            <option>Details.txt</option>
+        </select>
+        <br />
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+﻿<html>
+<head>
+	<title>XML External Entities</title>
+</head>
+<body>
+	<h1>(XXE) XML External Entities</h1>
+    <br />
+    <a href="https://www.owasp.org/index.php/XML_External_Entity_(XXE)_Processing">Reference</a>
+    <hr />
+    <h2>Scenario: Processing XML</h2>
+    <p>The following form allows you to see how the text inside of an XML document will be rendered.</p>
+    <br />
+    <form action="/Main/XXE" method="post" enctype="multipart/form-data">
+		Choose an XML file to pretty print:
+        <br />
+		<input type="file" name="xmlFile.xml">
+        <br />
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
